@@ -6,11 +6,14 @@ def crearMatriz(numRen,numCol,inicializador):
     return matriz
 
 def imprimeMatriz(matriz):
+    cont = 0
+    print("  0 1 2")
     for renglon in matriz:
-        salida = ""
+        salida = f"{cont} "
         for dato in renglon:
             salida += dato + " "
         print(salida)
+        cont += 1
 
 def preguntaUsuario(matriz):
     print("\nEscoge donde vas a tirar")
